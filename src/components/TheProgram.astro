@@ -39,7 +39,7 @@ Target: **CAD $55,000–$115,000**, shared across two funding streams.
 
 **Co-funders** contribute on a pay-what-you-can basis (target: 3–5 organizations at CAD $10,000 each) and receive curriculum input, a dedicated privacy-preserving AI assistant for their own knowledge management, and additional one-on-one and group support.
 
-**Web3 sponsors** (Near Protocol, Anoma, Celo, and comparable networks) receive content input, live access to Alliance members, brand placement in relevant sessions, and free Bioregional Builder slots for Canada-based AI infrastructure projects.
+**Web3 sponsors** receive content input, live access to Alliance members, brand placement in relevant sessions, and free Bioregional Builder slots for Canada-based AI infrastructure projects.
 
 Program resources are governed through a purpose-built, time-limited DAO, dissolved at project close. All financial flows are on public distributed ledgers.
 
@@ -54,33 +54,83 @@ Program resources are governed through a purpose-built, time-limited DAO, dissol
 3. **Feedback and topic requests** — What questions are most pressing for your members? What domains are most represented in your network? Early input shapes the curriculum most.`;
 ---
 
-<section id="program" class="two-tracks">
+<section id="program" class="the-program">
   <div class="container">
-    <h2 class="section-heading">The Program</h2>
+    <div class="section-header">
+      <h2 class="section-heading">The Program</h2>
+      <span class="timeline-pill">Q2 2026</span>
+    </div>
+    <p class="section-intro">
+      Peer-driven learning events, hands-on skill-building, and ongoing support — 
+      helping Alliance members build genuine fluency in community-owned AI tools.
+    </p>
 
     <div class="tracks-grid">
-      <article class="track-card track-card--orange">
-        <div class="track-card-header">
-          <h3 class="track-title">Learning Events</h3>
-          <span class="track-indicator"></span>
+      <article class="track-card">
+        <div class="card-header">
+          <div class="icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 16v-4"></path>
+              <path d="M12 8h.01"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Foundations</h3>
         </div>
-        <p class="track-description">
-          Peer-driven sessions at three levels — introductory, skills, and
-          technical deep-dives — delivered on open platforms with recordings
-          shared in a commons.
+        <p class="card-framing">
+          Start here. Build shared vocabulary and practical skills for non-technical staff.
         </p>
+        <ul class="card-list">
+          <li><strong>What AI actually is</strong> — algorithms, data ownership, real costs</li>
+          <li><strong>Community perspectives</strong> — facilitated sharing from Alliance members</li>
+          <li><strong>Basic tooling</strong> — command line, code editors, AI assistants</li>
+          <li><strong>Evaluating any tech stack</strong> — frameworks for understanding who controls what</li>
+        </ul>
       </article>
 
-      <article class="track-card track-card--green">
-        <div class="track-card-header">
-          <h3 class="track-title">Peer Support &amp; Knowledge Mapping</h3>
-          <span class="track-indicator"></span>
+      <article class="track-card">
+        <div class="card-header">
+          <div class="icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Deep-Dives</h3>
         </div>
-        <p class="track-description">
-          Weekly office hours, one-on-one calls, access to contributor
-          networks, technical sensemaking for leads, and mapping of social
-          tech projects across Canada's bioregions.
+        <p class="card-framing">
+          Co-designed with members, led by practitioners already building in this space.
         </p>
+        <ul class="card-list">
+          <li><strong>Peer exchange</strong> — surface existing work and reduce redundant effort across the network</li>
+          <li><strong>Local model deployment</strong> — run AI tools on your own infrastructure</li>
+          <li><strong>Open-source agent frameworks</strong> — build automation you actually control</li>
+          <li><strong>Knowledge mobilization labs</strong> — move community knowledge into interoperable formats</li>
+        </ul>
+      </article>
+
+      <article class="track-card track-card--support">
+        <div class="card-header">
+          <div class="icon-wrapper icon-wrapper--green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="card-title">Support & Mapping</h3>
+        </div>
+        <p class="card-framing">
+          Ongoing help — and a navigable map of who's doing what across Canada's bioregions.
+        </p>
+        <ul class="card-list">
+          <li><strong>Weekly office hours & coworking</strong> — drop-in support between sessions</li>
+          <li><strong>One-on-one calls</strong> — focused problem-solving for your specific context</li>
+          <li><strong>Technical sensemaking</strong> — translate operational challenges into searchable language</li>
+          <li><strong>Ecosystem mapping</strong> — asset mapping and knowledge graphing on Geo Protocol</li>
+          <li><strong>Network connections</strong> — introductions to bioregional and domain-specific knowledge commons</li>
+        </ul>
       </article>
     </div>
 
@@ -124,98 +174,158 @@ Program resources are governed through a purpose-built, time-limited DAO, dissol
 </script>
 
 <style>
-  .two-tracks {
+  .the-program {
     background-color: var(--color-cream);
     padding-block: var(--space-2xl);
   }
 
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+  }
+
   .section-heading {
-    text-align: center;
+    font-family: var(--font-serif);
     font-size: var(--text-2xl);
     color: var(--color-charcoal);
-    margin-block-end: var(--space-xl);
+    margin: 0;
+  }
+
+  .section-intro {
+    font-size: var(--text-lg);
+    color: var(--color-charcoal);
+    opacity: 0.8;
+    text-align: center;
+    max-width: 65ch;
+    margin-inline: auto;
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
+  }
+
+  .timeline-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35em 0.8em;
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-orange);
+    background-color: rgba(245, 135, 44, 0.12);
+    border-radius: 100px;
+    border: 1px solid rgba(245, 135, 44, 0.25);
   }
 
   .tracks-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
+    gap: var(--space-lg);
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .tracks-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   .track-card {
     background-color: var(--color-cream-light);
-    border-radius: 16px;
-    padding: var(--space-xl);
+    border-radius: 12px;
+    padding: var(--space-lg);
     border: 1px solid rgba(45, 45, 45, 0.08);
-    transition:
-      transform var(--transition-medium),
-      box-shadow var(--transition-medium),
-      border-color var(--transition-medium);
+    transition: transform var(--transition-medium),
+      box-shadow var(--transition-medium);
   }
 
   .track-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(26, 26, 26, 0.1);
   }
 
-  .track-card--orange {
-    border-top: 3px solid var(--color-orange);
-  }
-
-  .track-card--orange:hover {
-    border-color: rgba(245, 135, 44, 0.3);
-    box-shadow: 0 8px 32px rgba(245, 135, 44, 0.12);
-  }
-
-  .track-card--green {
+  .track-card--support {
     border-top: 3px solid var(--color-green);
   }
 
-  .track-card--green:hover {
-    border-color: rgba(122, 154, 78, 0.3);
-    box-shadow: 0 8px 32px rgba(122, 154, 78, 0.12);
+  .track-card--support:hover {
+    box-shadow: 0 8px 24px rgba(122, 154, 78, 0.15);
   }
 
-  .track-card-header {
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+  }
+
+  .icon-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: var(--space-md);
-    margin-block-end: var(--space-md);
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-orange);
+    border-radius: 10px;
+    color: var(--color-cream);
   }
 
-  .track-title {
+  .icon-wrapper--green {
+    background-color: var(--color-green);
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .card-title {
     font-family: var(--font-serif);
     font-size: var(--text-xl);
     color: var(--color-charcoal);
     margin: 0;
   }
 
-  .track-indicator {
-    display: block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-
-  .track-card--orange .track-indicator {
-    background-color: var(--color-orange);
-    box-shadow: 0 0 12px rgba(245, 135, 44, 0.5);
-  }
-
-  .track-card--green .track-indicator {
-    background-color: var(--color-green);
-    box-shadow: 0 0 12px rgba(122, 154, 78, 0.5);
-  }
-
-  .track-description {
-    font-size: var(--text-base);
-    line-height: 1.7;
+  .card-framing {
+    font-size: var(--text-sm);
+    line-height: 1.6;
     color: var(--color-charcoal);
-    opacity: 0.85;
-    margin: 0;
+    opacity: 0.75;
+    margin-bottom: var(--space-md);
     max-width: none;
+  }
+
+  .card-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: 0;
+    margin: 0;
+  }
+
+  .card-list li {
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    color: var(--color-charcoal);
+    padding-left: 1em;
+    position: relative;
+  }
+
+  .card-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--color-green);
+  }
+
+  .card-list li strong {
+    font-weight: 600;
   }
 
   /* Proposal disclosure */
@@ -315,24 +425,34 @@ Program resources are governed through a purpose-built, time-limited DAO, dissol
   }
 
   @media (max-width: 768px) {
-    .two-tracks {
+    .the-program {
       padding-block: var(--space-xl);
+    }
+
+    .section-header {
+      flex-direction: column;
+      gap: var(--space-sm);
     }
 
     .section-heading {
       font-size: var(--text-xl);
     }
 
-    .tracks-grid {
-      grid-template-columns: 1fr;
-      gap: var(--space-lg);
-    }
-
     .track-card {
-      padding: var(--space-lg);
+      padding: var(--space-md);
     }
 
-    .track-title {
+    .icon-wrapper {
+      width: 38px;
+      height: 38px;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .card-title {
       font-size: var(--text-lg);
     }
 

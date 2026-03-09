@@ -3,56 +3,69 @@
 
 <section id="funding" class="resourcing">
   <div class="container">
-    <h2 class="heading">Budget &amp; Resourcing</h2>
+    <h2 class="heading">How It's Funded</h2>
 
-    <p class="target">Target: <strong>CAD $55,000–$115,000</strong>, shared across two funding streams.</p>
+    <p class="intro">
+      A shared cost model: facilitation funded by participants, programming funded by sponsors, 
+      labor contributed by the network.
+    </p>
 
     <div class="funding-grid">
       <div class="funding-block">
         <h3 class="block-title">Participant Co-Funding</h3>
-        <p class="block-amount">CAD $30,000–$50,000</p>
+        <p class="block-amount">CAD $30,000–50,000</p>
         <p class="block-description">
-          Pay-what-you-can, targeting 3–5 organizations at ~$10K each.
+          Pay-what-you-can, targeting 3–5 organizations at ~$10K each. In-kind contributions 
+          are welcome but don't count toward the cash goal.
         </p>
         <div class="benefits">
           <p class="benefits-label">Co-funders receive:</p>
           <ul class="benefits-list">
-            <li>Curriculum input</li>
-            <li>A dedicated privacy-preserving AI assistant for your own knowledge management</li>
-            <li>Additional one-on-one and group support</li>
+            <li>Input on which topics the curriculum covers</li>
+            <li>A managed, privacy-preserving AI assistant for your team's knowledge work</li>
+            <li>Additional one-on-one and group support beyond the standard program</li>
           </ul>
         </div>
       </div>
 
       <div class="funding-block">
         <h3 class="block-title">Web3 Sponsorship</h3>
-        <p class="block-amount">USD $25,000–$50,000</p>
+        <p class="block-amount">USD $25,000–50,000</p>
         <p class="block-description">
-          From Near Protocol, Anoma, Celo, and comparable networks.
+          From infrastructure projects with genuine social impact applications. 
+          Sponsors get curriculum input, direct access to Alliance members at live events, 
+          and visibility in relevant sessions.
         </p>
         <div class="benefits">
           <p class="benefits-label">Sponsors receive:</p>
           <ul class="benefits-list">
-            <li>Content input and live access to Alliance members</li>
-            <li>Brand placement in relevant sessions</li>
-            <li>Free Bioregional Builder slots for Canada-based AI infrastructure projects</li>
+            <li>Input on programming direction</li>
+            <li>Direct access to Alliance members at live events</li>
+            <li>Brand placement in sessions relevant to their domain</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <p class="labor-note">
-      Resources governed through a purpose-built, time-limited DAO. All
-      financial flows on public distributed ledgers. Labor contributed by
-      Green Pill Network, Bread Cooperative, OpenCivics Labs, and Gaia AI.
-    </p>
+    <div class="governance-note">
+      <p class="governance-text">
+        <strong>Governance:</strong> Resources stewarded through an ephemeral DAO — a purpose-built, 
+        time-limited structure dissolved at project close. All financial flows on public ledgers, 
+        transparent and auditable.
+      </p>
+      <p class="labor-text">
+        <strong>Labor:</strong> Delivered by a distributed contributor network from AI Alliance 
+        member organizations and aligned networks — Green Pill Network, Bread Cooperative, 
+        OpenCivics Labs, and Gaia AI.
+      </p>
+    </div>
   </div>
 </section>
 
 <style>
   .resourcing {
     background-color: var(--color-cream-light);
-    padding-block: var(--space-xl);
+    padding-block: var(--space-2xl);
   }
 
   .container {
@@ -67,22 +80,26 @@
     font-size: var(--text-xl);
     font-weight: 700;
     color: var(--color-charcoal);
+    text-align: center;
     margin-bottom: var(--space-sm);
   }
 
-  .target {
+  .intro {
     font-size: var(--text-base);
     color: var(--color-charcoal);
     opacity: 0.85;
-    margin-bottom: var(--space-lg);
-    max-width: none;
+    text-align: center;
+    max-width: 55ch;
+    margin-inline: auto;
+    margin-bottom: var(--space-xl);
+    line-height: 1.6;
   }
 
   .funding-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-lg);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xl);
   }
 
   .funding-block {
@@ -157,19 +174,32 @@
     font-weight: 600;
   }
 
-  .labor-note {
-    font-size: var(--text-xs);
-    color: var(--color-charcoal);
-    opacity: 0.6;
-    line-height: 1.6;
-    text-align: center;
+  .governance-note {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
     max-width: 70ch;
     margin-inline: auto;
   }
 
+  .governance-text,
+  .labor-text {
+    font-size: var(--text-sm);
+    color: var(--color-charcoal);
+    opacity: 0.7;
+    line-height: 1.6;
+    text-align: center;
+    max-width: none;
+  }
+
+  .governance-text strong,
+  .labor-text strong {
+    opacity: 1;
+  }
+
   @media (max-width: 768px) {
     .resourcing {
-      padding-block: var(--space-lg);
+      padding-block: var(--space-xl);
     }
 
     .funding-grid {
@@ -179,6 +209,10 @@
 
     .funding-block {
       padding: var(--space-md);
+    }
+
+    .governance-note {
+      gap: var(--space-xs);
     }
   }
 </style>
