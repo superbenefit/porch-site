@@ -4,12 +4,50 @@
 <section class="hero">
   <div class="hero-content">
     <div class="hero-text">
-      <p class="hero-tagline">Local Decentralized AI Summer</p>
-      <h1 class="hero-headline">Local d-AI Summer</h1>
-      <p class="hero-byline">A Proposal by the Infinite Front Porch — for the AI Alliance</p>
+      <p class="hero-tagline">A Proposal for the AI Alliance</p>
+      <h1 class="hero-headline">Community AI,<br />on your terms.</h1>
       <p class="hero-value-prop">
-        A facilitation program for Canadian social impact organizations navigating the decentralized AI landscape.
+        A facilitation program for social impact organizations navigating the
+        AI landscape — peer-driven learning, hands-on skill-building, and
+        connection to the broader ecosystem of organizations already doing
+        this work.
       </p>
+      <a href="#program" class="btn btn-primary hero-cta">
+        Read the Proposal <span class="arrow">↓</span>
+      </a>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+        <circle cx="240" cy="240" r="200" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.3" />
+        <circle cx="240" cy="240" r="160" stroke="var(--color-orange)" stroke-width="0.5" opacity="0.2" />
+        <line x1="140" y1="160" x2="280" y2="200" stroke="var(--color-gold)" stroke-width="0.75" opacity="0.35" />
+        <line x1="280" y1="200" x2="320" y2="320" stroke="var(--color-orange)" stroke-width="0.75" opacity="0.3" />
+        <line x1="320" y1="320" x2="180" y2="340" stroke="var(--color-gold)" stroke-width="0.75" opacity="0.25" />
+        <line x1="180" y1="340" x2="140" y2="160" stroke="var(--color-orange)" stroke-width="0.75" opacity="0.3" />
+        <line x1="280" y1="200" x2="180" y2="340" stroke="var(--color-cream)" stroke-width="0.5" opacity="0.15" />
+        <line x1="140" y1="160" x2="320" y2="320" stroke="var(--color-cream)" stroke-width="0.5" opacity="0.1" />
+        <line x1="200" y1="120" x2="360" y2="260" stroke="var(--color-gold)" stroke-width="0.5" opacity="0.2" />
+        <line x1="360" y1="260" x2="240" y2="380" stroke="var(--color-orange)" stroke-width="0.5" opacity="0.15" />
+        <line x1="100" y1="280" x2="200" y2="120" stroke="var(--color-cream)" stroke-width="0.5" opacity="0.12" />
+        <circle cx="140" cy="160" r="8" fill="var(--color-orange)" opacity="0.9" />
+        <circle cx="140" cy="160" r="16" fill="var(--color-orange)" opacity="0.15" />
+        <circle cx="280" cy="200" r="10" fill="var(--color-gold)" opacity="0.85" />
+        <circle cx="280" cy="200" r="20" fill="var(--color-gold)" opacity="0.12" />
+        <circle cx="320" cy="320" r="7" fill="var(--color-orange)" opacity="0.8" />
+        <circle cx="320" cy="320" r="14" fill="var(--color-orange)" opacity="0.12" />
+        <circle cx="180" cy="340" r="9" fill="var(--color-gold)" opacity="0.85" />
+        <circle cx="180" cy="340" r="18" fill="var(--color-gold)" opacity="0.1" />
+        <circle cx="200" cy="120" r="5" fill="var(--color-cream)" opacity="0.4" />
+        <circle cx="360" cy="260" r="6" fill="var(--color-cream)" opacity="0.35" />
+        <circle cx="240" cy="380" r="4" fill="var(--color-cream)" opacity="0.3" />
+        <circle cx="100" cy="280" r="5" fill="var(--color-cream)" opacity="0.25" />
+        <circle cx="210" cy="230" r="2.5" fill="var(--color-green)" opacity="0.6" />
+        <circle cx="250" cy="290" r="2" fill="var(--color-green)" opacity="0.5" />
+        <circle cx="160" cy="250" r="2" fill="var(--color-green)" opacity="0.4" />
+        <ellipse cx="220" cy="220" rx="80" ry="60" fill="var(--color-orange)" opacity="0.04" transform="rotate(-15 220 220)" />
+        <ellipse cx="270" cy="280" rx="70" ry="50" fill="var(--color-gold)" opacity="0.04" transform="rotate(20 270 280)" />
+        <ellipse cx="190" cy="300" rx="60" ry="45" fill="var(--color-green)" opacity="0.03" transform="rotate(-8 190 300)" />
+      </svg>
     </div>
   </div>
 </section>
@@ -19,53 +57,48 @@
     position: relative;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    padding-block-start: max(12vh, var(--space-2xl));
+    padding-block-end: var(--space-2xl);
+    padding-inline: var(--space-lg);
     background-color: var(--color-black);
     overflow: hidden;
-    padding-block: var(--space-2xl);
-    padding-inline: var(--space-lg);
   }
 
-  /* ===== Content ===== */
   .hero-content {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--space-xl);
+    width: 100%;
     max-width: var(--max-width);
+    margin-inline: auto;
   }
 
   .hero-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--space-md);
   }
 
-  /* ===== Typography ===== */
   .hero-tagline {
     font-family: var(--font-sans);
-    font-size: var(--text-base);
-    font-weight: 500;
+    font-size: var(--text-sm);
+    font-weight: 600;
     color: var(--color-orange);
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    margin-bottom: var(--space-sm);
   }
 
   .hero-headline {
     font-family: var(--font-serif);
     font-size: var(--text-hero);
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.05;
     letter-spacing: -0.02em;
-    margin-bottom: var(--space-md);
-    /* Warm gradient text */
     background: linear-gradient(
       135deg,
       var(--color-cream) 0%,
@@ -76,18 +109,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 2px 10px rgba(245, 135, 44, 0.2));
-  }
-
-  .hero-byline {
-    font-family: var(--font-sans);
-    font-size: var(--text-lg);
-    font-weight: 400;
-    color: var(--color-cream);
-    opacity: 0.8;
-    max-width: 50ch;
-    line-height: 1.5;
-    margin-bottom: var(--space-lg);
+    filter: drop-shadow(0 2px 10px rgba(245, 135, 44, 0.15));
   }
 
   .hero-value-prop {
@@ -95,43 +117,72 @@
     font-size: var(--text-lg);
     font-weight: 400;
     color: var(--color-cream);
-    opacity: 0.7;
-    max-width: 48ch;
+    opacity: 0.8;
+    max-width: 42ch;
     line-height: 1.6;
   }
 
-  /* ===== Responsive ===== */
-  @media (max-width: 768px) {
+  .hero-cta {
+    margin-top: var(--space-sm);
+  }
+
+  .hero-cta .arrow {
+    display: inline-block;
+    transition: transform var(--transition-medium);
+  }
+
+  .hero-cta:hover .arrow {
+    transform: translateY(3px);
+  }
+
+  .hero-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-svg {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+
+  @media (max-width: 900px) {
     .hero {
-      min-height: auto;
-      padding-block: var(--space-2xl);
+      padding-block-start: max(8vh, var(--space-xl));
     }
 
-    .hero-tagline {
-      font-size: var(--text-sm);
-      letter-spacing: 0.12em;
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
     }
 
-    .hero-headline {
-      font-size: var(--text-3xl);
+    .hero-visual {
+      order: -1;
     }
 
-    .hero-byline {
-      font-size: var(--text-base);
-    }
-
-    .hero-value-prop {
-      font-size: var(--text-base);
+    .hero-svg {
+      max-width: 280px;
+      opacity: 0.7;
     }
   }
 
   @media (max-width: 480px) {
     .hero {
+      min-height: auto;
       padding-block: var(--space-xl);
     }
 
     .hero-headline {
       font-size: var(--text-2xl);
+    }
+
+    .hero-value-prop {
+      font-size: var(--text-base);
+    }
+
+    .hero-visual {
+      display: none;
     }
   }
 </style>

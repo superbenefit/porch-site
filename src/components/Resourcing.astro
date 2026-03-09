@@ -1,32 +1,56 @@
 ---
-// Resourcing Section — Funding model (brief, muted presentation)
-// Design: Smaller, less prominent than other sections
 ---
 
-<section id="resourcing" class="resourcing">
+<section id="funding" class="resourcing">
   <div class="container">
-    <h2 class="heading">How It's Funded</h2>
-    
-    <p class="description">
-      Shared cost model: participant co-funding (CAD $30–50K target), web3 sponsorship 
-      (USD $25–50K), and in-kind contributor labor from Green Pill Network, Bread 
-      Cooperative, OpenCivics Labs, and Gaia AI.
-    </p>
-    
-    <div class="benefits">
-      <p class="benefits-intro">Co-funders receive:</p>
-      <ul class="benefits-list">
-        <li>Curriculum input priority</li>
-        <li>Managed IronClaw AI assistant instance</li>
-        <li>Additional one-on-one support</li>
-      </ul>
+    <h2 class="heading">Budget &amp; Resourcing</h2>
+
+    <p class="target">Target: <strong>CAD $55,000–$115,000</strong>, shared across two funding streams.</p>
+
+    <div class="funding-grid">
+      <div class="funding-block">
+        <h3 class="block-title">Participant Co-Funding</h3>
+        <p class="block-amount">CAD $30,000–$50,000</p>
+        <p class="block-description">
+          Pay-what-you-can, targeting 3–5 organizations at ~$10K each.
+        </p>
+        <div class="benefits">
+          <p class="benefits-label">Co-funders receive:</p>
+          <ul class="benefits-list">
+            <li>Curriculum input</li>
+            <li>A dedicated privacy-preserving AI assistant for your own knowledge management</li>
+            <li>Additional one-on-one and group support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="funding-block">
+        <h3 class="block-title">Web3 Sponsorship</h3>
+        <p class="block-amount">USD $25,000–$50,000</p>
+        <p class="block-description">
+          From Near Protocol, Anoma, Celo, and comparable networks.
+        </p>
+        <div class="benefits">
+          <p class="benefits-label">Sponsors receive:</p>
+          <ul class="benefits-list">
+            <li>Content input and live access to Alliance members</li>
+            <li>Brand placement in relevant sessions</li>
+            <li>Free Bioregional Builder slots for Canada-based AI infrastructure projects</li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <p class="labor-note">
+      Resources governed through a purpose-built, time-limited DAO. All
+      financial flows on public distributed ledgers. Labor contributed by
+      Green Pill Network, Bread Cooperative, OpenCivics Labs, and Gaia AI.
+    </p>
   </div>
 </section>
 
 <style>
   .resourcing {
-    /* Muted, lighter background — less prominent */
     background-color: var(--color-cream-light);
     padding-block: var(--space-xl);
   }
@@ -43,30 +67,70 @@
     font-size: var(--text-xl);
     font-weight: 700;
     color: var(--color-charcoal);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
   }
 
-  .description {
-    font-size: var(--text-sm);
+  .target {
+    font-size: var(--text-base);
     color: var(--color-charcoal);
     opacity: 0.85;
-    line-height: 1.5;
-    max-width: 65ch;
+    margin-bottom: var(--space-lg);
+    max-width: none;
+  }
+
+  .funding-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
     margin-bottom: var(--space-lg);
   }
 
+  .funding-block {
+    padding: var(--space-lg);
+    background-color: rgba(237, 221, 200, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(45, 45, 45, 0.06);
+  }
+
+  .block-title {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-charcoal);
+    margin-bottom: 0.15em;
+  }
+
+  .block-amount {
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-orange);
+    margin-bottom: var(--space-sm);
+    max-width: none;
+  }
+
+  .block-description {
+    font-size: var(--text-sm);
+    color: var(--color-charcoal);
+    opacity: 0.85;
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+    max-width: none;
+  }
+
   .benefits {
-    padding: var(--space-md) var(--space-lg);
-    background-color: rgba(237, 221, 200, 0.6); /* Subtle cream overlay */
+    padding: var(--space-md);
+    background-color: rgba(237, 221, 200, 0.6);
     border-radius: 8px;
     border-left: 3px solid var(--color-orange);
   }
 
-  .benefits-intro {
+  .benefits-label {
     font-size: var(--text-sm);
     font-weight: 600;
     color: var(--color-charcoal);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
+    max-width: none;
   }
 
   .benefits-list {
@@ -82,6 +146,7 @@
     padding-block: var(--space-xs);
     position: relative;
     padding-left: var(--space-md);
+    line-height: 1.5;
   }
 
   .benefits-list li::before {
@@ -92,13 +157,27 @@
     font-weight: 600;
   }
 
-  /* Mobile adjustments */
+  .labor-note {
+    font-size: var(--text-xs);
+    color: var(--color-charcoal);
+    opacity: 0.6;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 70ch;
+    margin-inline: auto;
+  }
+
   @media (max-width: 768px) {
     .resourcing {
       padding-block: var(--space-lg);
     }
 
-    .benefits {
+    .funding-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+    }
+
+    .funding-block {
       padding: var(--space-md);
     }
   }

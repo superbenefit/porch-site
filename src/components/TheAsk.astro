@@ -3,35 +3,39 @@
 
 <section class="the-ask" id="ask">
   <div class="ask-content">
-    <h2 class="ask-heading">What We're Asking</h2>
-    
+    <h2 class="ask-heading">What We're Asking For</h2>
+
     <div class="asks-grid">
       <div class="ask-item">
         <span class="ask-number">1</span>
         <div class="ask-text">
           <h3 class="ask-title">Co-funding commitments</h3>
           <p class="ask-description">
-            Even soft/conditional commitments help us approach sponsors with credible demand signal.
+            Even soft or conditional commitments give us a credible signal of
+            demand when approaching web3 sponsors.
           </p>
         </div>
       </div>
-      
+
       <div class="ask-item">
         <span class="ask-number">2</span>
         <div class="ask-text">
-          <h3 class="ask-title">Permission to name the AI Alliance</h3>
+          <h3 class="ask-title">Permission to name the Alliance in sponsor outreach</h3>
           <p class="ask-description">
-            Your credibility is an asset in sponsor conversations.
+            Any formal partnership agreements will come back to you for review
+            before signing.
           </p>
         </div>
       </div>
-      
+
       <div class="ask-item">
         <span class="ask-number">3</span>
         <div class="ask-text">
           <h3 class="ask-title">Feedback and topic requests</h3>
           <p class="ask-description">
-            What are your members' most pressing AI questions?
+            What questions are most pressing for your members? What domains are
+            most represented in your network? Early input shapes the curriculum
+            most.
           </p>
         </div>
       </div>
@@ -49,7 +53,6 @@
     overflow: hidden;
   }
 
-  /* Subtle warm glow effect */
   .the-ask::before {
     content: '';
     position: absolute;
@@ -148,7 +151,6 @@
     max-width: 100%;
   }
 
-  /* ===== Responsive ===== */
   @media (min-width: 768px) {
     .asks-grid {
       gap: var(--space-xl);
@@ -200,6 +202,16 @@
 
     .ask-description {
       font-size: var(--text-sm);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ask-item {
+      transition: none;
+    }
+
+    .ask-item:hover {
+      transform: none;
     }
   }
 </style>
