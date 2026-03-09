@@ -1,0 +1,137 @@
+---
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-tagline">Local Decentralized AI Summer</p>
+      <h1 class="hero-headline">Local d-AI Summer</h1>
+      <p class="hero-byline">A Proposal by the Infinite Front Porch — for the AI Alliance</p>
+      <p class="hero-value-prop">
+        A facilitation program for Canadian social impact organizations navigating the decentralized AI landscape.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-black);
+    overflow: hidden;
+    padding-block: var(--space-2xl);
+    padding-inline: var(--space-lg);
+  }
+
+  /* ===== Content ===== */
+  .hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    max-width: var(--max-width);
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  /* ===== Typography ===== */
+  .hero-tagline {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-orange);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: var(--space-sm);
+  }
+
+  .hero-headline {
+    font-family: var(--font-serif);
+    font-size: var(--text-hero);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-md);
+    /* Warm gradient text */
+    background: linear-gradient(
+      135deg,
+      var(--color-cream) 0%,
+      var(--color-gold) 30%,
+      var(--color-orange) 60%,
+      var(--color-red) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 2px 10px rgba(245, 135, 44, 0.2));
+  }
+
+  .hero-byline {
+    font-family: var(--font-sans);
+    font-size: var(--text-lg);
+    font-weight: 400;
+    color: var(--color-cream);
+    opacity: 0.8;
+    max-width: 50ch;
+    line-height: 1.5;
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero-value-prop {
+    font-family: var(--font-sans);
+    font-size: var(--text-lg);
+    font-weight: 400;
+    color: var(--color-cream);
+    opacity: 0.7;
+    max-width: 48ch;
+    line-height: 1.6;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .hero {
+      min-height: auto;
+      padding-block: var(--space-2xl);
+    }
+
+    .hero-tagline {
+      font-size: var(--text-sm);
+      letter-spacing: 0.12em;
+    }
+
+    .hero-headline {
+      font-size: var(--text-3xl);
+    }
+
+    .hero-byline {
+      font-size: var(--text-base);
+    }
+
+    .hero-value-prop {
+      font-size: var(--text-base);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      padding-block: var(--space-xl);
+    }
+
+    .hero-headline {
+      font-size: var(--text-2xl);
+    }
+  }
+</style>

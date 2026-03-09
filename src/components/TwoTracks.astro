@@ -1,0 +1,183 @@
+---
+interface Track {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  heading?: string;
+  track1?: Track;
+  track2?: Track;
+}
+
+const {
+  heading = "Two Complementary Tracks",
+  track1 = {
+    title: "Local d-AI Summer",
+    description: "Learning events and peer support — guided sessions on decentralized AI, weekly drop-in coworking, one-on-one support, and access to contributor networks."
+  },
+  track2 = {
+    title: "Infinite Front Porch",
+    description: "Technical senseweaving and knowledge graphing — translating organizational needs into technical language, bioregional ecosystem mapping, and knowledge commons connections."
+  }
+} = Astro.props;
+---
+
+<section class="two-tracks">
+  <div class="container">
+    <h2 class="section-heading">{heading}</h2>
+
+    <div class="tracks-grid">
+      <article class="track-card track-card--orange">
+        <div class="track-card-header">
+          <h3 class="track-title">{track1.title}</h3>
+          <span class="track-indicator"></span>
+        </div>
+        <p class="track-description">{track1.description}</p>
+      </article>
+
+      <article class="track-card track-card--green">
+        <div class="track-card-header">
+          <h3 class="track-title">{track2.title}</h3>
+          <span class="track-indicator"></span>
+        </div>
+        <p class="track-description">{track2.description}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .two-tracks {
+    background-color: var(--color-cream);
+    padding-block: var(--space-2xl);
+  }
+
+  .section-heading {
+    text-align: center;
+    font-size: var(--text-2xl);
+    color: var(--color-charcoal);
+    margin-block-end: var(--space-xl);
+  }
+
+  .tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  /* Track card styling */
+  .track-card {
+    background-color: var(--color-cream-light);
+    border-radius: 16px;
+    padding: var(--space-xl);
+    border: 1px solid rgba(45, 45, 45, 0.08);
+    transition:
+      transform var(--transition-medium),
+      box-shadow var(--transition-medium),
+      border-color var(--transition-medium);
+  }
+
+  .track-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Theme variants for accent colors */
+  .track-card--orange {
+    border-top: 3px solid var(--color-orange);
+  }
+
+  .track-card--orange:hover {
+    border-color: rgba(245, 135, 44, 0.3);
+    box-shadow: 0 8px 32px rgba(245, 135, 44, 0.12);
+  }
+
+  .track-card--green {
+    border-top: 3px solid var(--color-green);
+  }
+
+  .track-card--green:hover {
+    border-color: rgba(122, 154, 78, 0.3);
+    box-shadow: 0 8px 32px rgba(122, 154, 78, 0.12);
+  }
+
+  .track-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-block-end: var(--space-md);
+  }
+
+  .track-title {
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    color: var(--color-charcoal);
+    margin: 0;
+  }
+
+  /* Accent indicator dots */
+  .track-indicator {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .track-card--orange .track-indicator {
+    background-color: var(--color-orange);
+    box-shadow: 0 0 12px rgba(245, 135, 44, 0.5);
+  }
+
+  .track-card--green .track-indicator {
+    background-color: var(--color-green);
+    box-shadow: 0 0 12px rgba(122, 154, 78, 0.5);
+  }
+
+  .track-description {
+    font-size: var(--text-base);
+    line-height: 1.7;
+    color: var(--color-charcoal);
+    opacity: 0.85;
+    margin: 0;
+    max-width: none;
+  }
+
+  /* Responsive: Stack on tablet and below */
+  @media (max-width: 768px) {
+    .two-tracks {
+      padding-block: var(--space-xl);
+    }
+
+    .section-heading {
+      font-size: var(--text-xl);
+      margin-block-end: var(--space-lg);
+    }
+
+    .tracks-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+
+    .track-card {
+      padding: var(--space-lg);
+    }
+
+    .track-title {
+      font-size: var(--text-lg);
+    }
+  }
+
+  /* Reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .track-card {
+      transition: none;
+    }
+
+    .track-card:hover {
+      transform: none;
+    }
+  }
+</style>
