@@ -3,46 +3,43 @@
 
 <section class="why-it-matters">
   <div class="container">
-    <h2 class="section-heading">Why This Matters</h2>
-    
-    <div class="framing-content">
-      <p class="lead-paragraph">
-        Civil society organizations across Canada are facing the same challenge: AI is reshaping 
-        their landscape, but the conversation is dominated by two poles — corporate hype promising 
-        transformation, and blanket rejection treating all AI as inherently harmful. Neither serves 
-        communities well.
+    <span class="kicker">Why This Matters</span>
+
+    <p class="lead">
+      Civil society organizations across Canada are facing the same challenge: 
+      AI is reshaping their landscape, but the conversation is dominated by two 
+      poles — corporate hype promising transformation, and blanket rejection 
+      treating all AI as inherently harmful. Neither serves communities well.
+    </p>
+
+    <div class="body-text">
+      <p>
+        The organizations in this Alliance hold deep knowledge about community needs, social systems, 
+        and what "impact" actually means on the ground. But most lack the practical fluency to 
+        evaluate AI tools critically, deploy them on their own terms, or participate meaningfully in 
+        governance conversations about AI's future.
       </p>
-      
-      <div class="key-points">
-        <div class="point">
-          <h3 class="point-title">The organizations in this Alliance hold deep knowledge</h3>
-          <p class="point-text">
-            About community needs, social systems, and what "impact" actually means on the ground. 
-            But most lack the practical fluency to evaluate AI tools critically, deploy them on their 
-            own terms, or participate meaningfully in governance conversations about AI's future.
-          </p>
-        </div>
-        
-        <div class="point">
-          <h3 class="point-title">This isn't about "catching up" with the tech sector</h3>
-          <p class="point-text">
-            It's about ensuring that the people closest to communities — the ones doing the actual 
-            work of social change — can make informed decisions about which tools serve their mission 
-            and which don't. It's about building the capacity to say "no" from a position of knowledge, 
-            not fear — and to say "yes" with clear eyes about trade-offs.
-          </p>
-        </div>
-      </div>
-      
-      <blockquote class="core-message">
-        <p>The real risk isn't that civil society uses AI. It's that civil society gets left out of shaping it entirely.</p>
-      </blockquote>
-      
-      <p class="closing-text">
-        We've seen what happens when communities engage critically rather than reactively. People who 
-        understand both the limitations and the possibilities become the strongest advocates for 
+
+      <p>
+        This isn't about "catching up" with the tech sector. It's about ensuring that the people 
+        closest to communities — the ones doing the actual work of social change — can make informed 
+        decisions about which tools serve their mission and which don't. It's about building the 
+        capacity to say "no" from a position of knowledge, not fear — and to say "yes" with clear 
+        eyes about trade-offs.
+      </p>
+    </div>
+
+    <p class="core-message">
+      The real risk isn't that civil society uses AI. 
+      It's that civil society gets left out of shaping it entirely.
+    </p>
+
+    <div class="body-text">
+      <p>
+        We've seen what happens when communities engage critically rather than reactively. People 
+        who understand both the limitations and the possibilities become the strongest advocates for 
         responsible development, the sharpest critics of corporate overreach, and the most creative 
-        builders of alternatives.
+        builders of alternatives. This program creates that capacity.
       </p>
     </div>
   </div>
@@ -50,7 +47,7 @@
 
 <style>
   .why-it-matters {
-    background-color: var(--color-cream-light);
+    background-color: var(--color-cream);
     padding-block: var(--space-2xl);
   }
 
@@ -61,99 +58,53 @@
     padding-inline: var(--space-lg);
   }
 
-  .section-heading {
-    font-family: var(--font-serif);
-    font-size: var(--text-2xl);
-    font-weight: 700;
-    color: var(--color-charcoal);
-    text-align: center;
-    margin-bottom: var(--space-xl);
+  .kicker {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-orange);
+    margin-bottom: var(--space-md);
   }
 
-  .framing-content {
-    max-width: 70ch;
-    margin-inline: auto;
-  }
-
-  .lead-paragraph {
-    font-family: var(--font-serif);
-    font-size: var(--text-xl);
-    font-weight: 500;
-    color: var(--color-charcoal);
-    line-height: 1.5;
-    margin-bottom: var(--space-xl);
-    text-align: center;
-  }
-
-  .key-points {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-lg);
-    margin-bottom: var(--space-xl);
-  }
-
-  .point {
-    padding: var(--space-lg);
-    background-color: rgba(237, 221, 200, 0.5);
-    border-radius: 12px;
-    border-left: 4px solid var(--color-orange);
-  }
-
-  .point-title {
+  .lead {
     font-family: var(--font-serif);
     font-size: var(--text-lg);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--color-charcoal);
-    margin-bottom: var(--space-sm);
+    line-height: 1.5;
+    max-width: 75ch;
+    margin-bottom: var(--space-xl);
   }
 
-  .point-text {
+  .body-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-left: 15%;
+  }
+
+  .body-text p {
+    font-family: var(--font-sans);
     font-size: var(--text-base);
     color: var(--color-charcoal);
-    opacity: 0.9;
-    line-height: 1.6;
+    line-height: 1.7;
+    max-width: 65ch;
   }
 
   .core-message {
-    margin: var(--space-xl) 0;
-    padding: var(--space-xl);
-    background: linear-gradient(
-      135deg,
-      rgba(245, 135, 44, 0.08) 0%,
-      rgba(196, 64, 26, 0.05) 100%
-    );
-    border-radius: 12px;
-    border: 1px solid rgba(245, 135, 44, 0.2);
-    text-align: center;
-  }
-
-  .core-message p {
     font-family: var(--font-serif);
     font-size: var(--text-xl);
-    font-weight: 600;
-    color: var(--color-red);
-    line-height: 1.4;
-    margin: 0;
-  }
-
-  .core-message p::before {
-    content: '"';
-    font-size: 1.5em;
-    opacity: 0.5;
-  }
-
-  .core-message p::after {
-    content: '"';
-    font-size: 1.5em;
-    opacity: 0.5;
-  }
-
-  .closing-text {
-    font-size: var(--text-base);
+    font-style: italic;
+    font-weight: 400;
     color: var(--color-charcoal);
-    opacity: 0.85;
-    line-height: 1.7;
-    text-align: center;
+    line-height: 1.35;
+    max-width: none;
+    margin-block: var(--space-xl);
+    padding-left: var(--space-lg);
+    border-left: 3px solid var(--color-orange);
   }
 
   @media (max-width: 768px) {
@@ -161,24 +112,52 @@
       padding-block: var(--space-xl);
     }
 
-    .section-heading {
-      font-size: var(--text-xl);
-    }
-
-    .lead-paragraph {
+    .lead {
       font-size: var(--text-lg);
+      max-width: none;
+      margin-bottom: var(--space-lg);
     }
 
-    .point {
-      padding: var(--space-md);
+    .body-text {
+      margin-left: 0;
+    }
+
+    .body-text p {
+      max-width: none;
     }
 
     .core-message {
-      padding: var(--space-lg);
+      font-size: var(--text-lg);
+      max-width: none;
+      margin-block: var(--space-lg);
+      padding-left: var(--space-md);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .why-it-matters {
+      padding-block: var(--space-lg);
     }
 
-    .core-message p {
-      font-size: var(--text-lg);
+    .kicker {
+      margin-bottom: var(--space-sm);
+    }
+
+    .lead {
+      font-size: var(--text-base);
+      line-height: 1.5;
+      margin-bottom: var(--space-md);
+    }
+
+    .body-text {
+      gap: var(--space-sm);
+    }
+
+    .core-message {
+      font-size: var(--text-base);
+      margin-block: var(--space-md);
+      padding-left: var(--space-sm);
+      border-left-width: 2px;
     }
   }
 </style>
